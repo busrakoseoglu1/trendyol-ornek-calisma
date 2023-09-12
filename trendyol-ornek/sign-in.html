@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trendyol - Giriş</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .active{
+        font-weight:500;
+      }
+      .active:hover{
+        color: #f27a1a;
+      }
+      #sign-in-form {
+        text-align: center;
+      }
+      h4 {
+        color: #f27a1a;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .container {
+        position: absolute;
+        width: 525px;
+        height: 675px;
+        left: 50%;
+        margin-left: -262.5px;
+        margin-top: 60px;
+      }
+      .container-shadow {
+        background-color: white;
+        position: absolute;
+        width: 525px;
+        height: 475px;
+        left: 50%;
+        margin-left: -262.5px;
+        margin-top: 30px;
+        box-shadow: 0px 30px 50px -20px #000;
+      }
+      .facebook {
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid #ececec;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-size: 12px;
+      }
+      .google {
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid #ececec;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-size: 12px;
+      }
+
+      #signin {
+        background-color: #f27a1a;
+        color: white;
+        border: 1px solid #f27a1a;
+        height: 44px;
+        font-size: 16px;
+        width: 61%;
+        margin: 45px 2px;
+        border-radius: 4px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      h2 {
+        padding-top: 1%;
+        font-weight: 80;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+      h3 {
+        font-weight: 60;
+        font-size: 15px;
+        padding-bottom: 0%;
+      }
+      .active {
+        color: #f27a1a;
+        font-size: x-large;
+      }
+      #eposta {
+        padding-top: 5px;
+        padding-right: 23%;
+        font-size: 16px;
+        margin-top: -3%;
+      }
+      #password {
+        padding-top: 5px;
+        padding-right: 23%;
+        font-size: 16px;
+        margin-top: -3%;
+        margin-bottom: -5%;
+      }
+      label {
+        margin-top: 10px;
+        margin-left: -240px;
+        color: black;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        position: relative;
+        display: block;
+        font-size: 14px;
+      }
+      
+      body {
+  margin-bottom: 800px; /* 800px lik alta indik */
+  }
+
+    </style>
+  </head>
+  <!--header-->
+  <header class="main-header">
+    <!--en üst indirim kuponlarım...-->
+    <nav id="main-nav" style="margin-right: 150px; font-size: 11px">
+      <ul>
+        <li>
+          <a href="https://partner.trendyol.com/onboarding/satici-formu"
+            >Yardım & Destek
+          </a>
+        </li>
+        <li>
+          <a href="https://partner.trendyol.com/onboarding/satici-formu"
+            >Hakkımızda
+          </a>
+        </li>
+        <li>
+          <a href="https://partner.trendyol.com/onboarding/satici-formu"
+            >Trendyol'da Satış Yap
+          </a>
+        </li>
+        <li>
+          <a href="https://www.trendyol.com/Hesabim/IndirimKuponlari"
+            >İndirim Kuponlarım
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="navbar">
+      <!--logo-->
+      <div class="grid-container">
+        <div id="item-1">
+          <!--resim logo-->
+          <img
+            src="img/Trendyol_logo.svg.png"
+            alt="Trendyol Logo"
+            width="140"
+            height="65"
+          />
+        </div>
+        <!--arama kısmı -->
+        <div id="item-2">
+          <div class="search-main">
+            <!--metin kısmı-->
+            <input
+              type="text"
+              class="tbox-search"
+              tabindex="1"
+              autocomplete="off"
+              maxlength="50"
+              placeholder="Aradığınız ürün,marka veya kategoriyi yazınız..."
+            />
+            <!--ikon kısmı için link açtım 2. / arama butonu 1.-->
+            <a class="btn-search">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 mr-auto">
+          <div class="d-flex justify-content-between">
+            <a href="#" class="item-3"
+              ><i class="fa fa-user" aria-hidden="true"></i>Giriş&nbsp;Yap</a
+            >
+            <a href="#" class="item-3"
+              ><i class="fa fa-heart" aria-hidden="true"></i>Favorilerim</a
+            >
+            <a href="#" class="item-3"
+              ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Sepetim</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--User kısmı-->
+    <!--kategoriler kadın erkek...-->
+    <div id="categories">
+      <nav>
+        <a href="https://www.trendyol.com/butik/liste/1/kadin">KADIN </a>
+        <a href="https://www.trendyol.com/butik/liste/2/erkek">ERKEK </a>
+        <a href="https://www.trendyol.com/butik/liste/3/anne--cocuk"
+          >ANNE & ÇOCUK</a
+        >
+        <a href="https://www.trendyol.com/butik/liste/12/ev--mobilya"
+          >EV & MOBİLYA</a
+        >
+        <a href="https://www.trendyol.com/butik/liste/16/supermarket"
+          >SÜPERMARKET</a
+        >
+        <a href="https://www.trendyol.com/butik/liste/16/supermarket"
+          >KOZMETİK</a
+        >
+        <a href="https://www.trendyol.com/butik/liste/9/ayakkabi--canta"
+          >AYAKKABI & ÇANTA</a
+        >
+        <a href="https://www.trendyol.com/butik/liste/5/elektronik"
+          >ELEKTRONİK</a
+        >
+        <a href="https://www.trendyol.com/butik/liste/22/spor--outdoor"
+          >SPOR & OUTDOOR</a
+        >
+        <a
+          href="https://www.trendyol.com/cok-satanlar?categoryId=56&type=bestSeller&webGenderId=1"
+          >ÇOK SATANLAR</a
+        >
+        <a href="https://www.trendyol.com/sr?tag=fs_23_8_2023_9_12"
+          >FLAŞ ÜRÜNLER</a
+        >
+      </nav>
+    </div>
+  </header>
+  <body>
+    <h2>Merhaba,</h2>
+    <h3>Trendyol’a giriş yap veya hesap oluştur, indirimleri kaçırma!</h3>
+
+    <div class="container-shadow"></div>
+    <div class="container">
+      <div class="headings">
+        <a href="#" class="active"><span>GİRİŞ YAP</span></a>
+        <!--<a id="sign-up" href="#"><span>KAYIT OL</span></a>-->
+      </div>
+      <div id="sign-in-form">
+        <form>
+          <label for="eposta"> E-Posta</label><br />
+          <input id="eposta" type="text" name="eposta" /><br />
+          <label for="password">Şifre</label><br />
+          <input id="password" type="password" name="password" /><br /><br />
+          <div class="fp" style="margin-left: 38%; margin-bottom: -5%">
+            <a href="https://www.trendyol.com/sifremiunuttum"
+              ><u>Şifremi Unuttum</u></a
+            >
+          </div>
+          <a
+            href="https://www.trendyol.com/?gads=true&tyutm_source=google&tyutm_medium=cpc&tyutm_campaign=new_gl_trendyol_2_x:brand-pure-istanbul&gclid=Cj0KCQjw6KunBhDxARIsAKFUGs9JJ43dDlfeAN3ojc-d_S3mLxdvvO_F2c51qIPF8Px-xQbVmwN7ynMaAqRuEALw_wcB"
+            ><input type="submit" value="Giriş Yap" id="signin" /><br
+          /></a>
+          <a
+            href="https://www.facebook.com/login.php?skip_api_login=1&api_key=384235118641188&kid_directed_site=0&app_id=384235118641188&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.trendyol.com%252Fsociallogin%26response_type%3Dtoken%26client_id%3D384235118641188%26scope%3Demail%252Cpublic_profile%26state%3DtypeId_1%252Ccb_%252F%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D36492ab9-61d9-45b9-85dd-e6f6b5ec55c3%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.trendyol.com%2Fsociallogin%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DtypeId_1%252Ccb_%252F%23_%3D_&display=page&locale=tr_TR&pl_dbl=0"
+            target="_blank"
+            class="facebook"
+            ><i class="fa-brands fa-facebook fa-2xl"></i>Facebook
+            <small>ile giriş yap</small></a
+          >
+          <a
+            href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=https%3A%2F%2Fwww.trendyol.com%2Fsociallogin&response_type=token&client_id=48558991372-4r4qd9m2kerqnnu9d9jbiru1q4cj96ee.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=typeId_2%2Ccb_%2F&service=lso&o2v=1&flowName=GeneralOAuthFlow"
+            class="google"
+            ><i class="fa-brands fa-google fa-2xl"></i> Google
+            <small>ile giriş yap</small></a
+          ><br />
+          <p style="font-size: 10px; margin-top: 6%; margin-left: -9%">
+            Üye olmadan verilen siparişlerin takibi için
+            <a href="https://www.trendyol.com/yardim/sorular"
+              ><u>tıklayınız.</u></a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+   
+    <footer class="footer" >
+      <hr>
+      <div class="foot" >
+        
+        <div class="foot1" style="padding-right:35px; "  >
+          <a href="https://www.trendyol.com/"><h2 style="margin-left: 12px;color: white;font-size:larger;" >Trendyol</h2></a><br>
+          <a href="https://www.trendyol.com/international.html/tr#careers" style="color: white;">Biz Kimiz</a> <br>
+          <a href="https://www.trendyol.com/international.html/tr#careers" style="color: white;">Kariyer</a> <br>
+          <a href="https://www.trendyol.com/iletisim.html" style="color: white;">İletişim</a> <br>
+          <a href="https://partner.trendyol.com/onboarding/satici-formu" style="color: white;">Trendyol'da Satış Yap</a> <br>
+          <h3 style="font-size: 16px;margin-left: 16px;color: white;" >Güvenli Alışveriş</h3> <br>
+          <div class="footer__wrapper__secure_payment">
+            <div class="troy-master-card-visa-img"> <img src="https://unalarif.com/wp-content/uploads/image-101.png" alt="" style="width: 120px;margin-left: 12px;"></div>
+          </div>
+        </div>
+        <div class="foot2" style="padding-right: 20px;">
+          <a href="https://www.trendyol.com/international.html" ><h2 style="margin-left: 12px;color: white;font-size:larger;" >About Us</h2></a> <br>
+          <a href="https://www.trendyol.com/international.html/en#whoWeAre"  style="color: white;">Who we are</a> <br>
+          <a href="https://www.trendyol.com/international.html/en#careers"  style="color: white;">Careers</a> <br>
+          <a href="https://www.trendyol.com/international.html/en#contactUs"  style="color: white;">Contact Us</a> <br>
+          <a href="https://www.trendyol.com/sustainability"  style="color: white;">Sustainability</a> <br> 
+          <h3 style="font-size: 16px;margin-left: 16px;color: white;"  >Mobil Uygulamalar</h3> <br>
+          <a href="https://itunes.apple.com/tr/app/trendyol.com/id524362642?mt=8" style="font-size: 16px;margin-left: 2px;"><button type="button" id="ulke" style="color: white; background-color: black; border-radius: 3px;width: 100px;height: 30px; "><i class="fab fa-app-store fa-lg"></i>App Store <br> indirin</button></a> <br>
+          <a href="https://play.google.com/store/apps/details?id=trendyol.com&feature=search_result#?t=W251bGwsMSwyLDEsInRyZW5keW9sLmNvbSJd" style="font-size: 16px;margin-left: 2px;"><button type="button" id="ulke" style="color: white; background-color: black; border-radius: 3px;width: 100px;height: 30px; "><i class="fa-brands fa-google-play fa-lg"></i>Google <br> indirin</button></a> <br>
+        </div>
+        <div class="foot3" style="padding-right: 20px;">
+          <a href="https://www.trendyol.com/s/kampanyalar"><h2 style="margin-left: 12px;color: white;font-size:larger;" >Kampanyalar</h2></a> <br>
+          <a href="https://www.trendyol.com/s/kampanyalar"  style="color: white;">Aktif Kampanyalar</a><br>
+          <a href="https://www.trendyol.com/s/elite"  style="color: white;">Elite Üyelik</a><br>
+          <a href="https://www.trendyol.com/s/hediye-rehberi"  style="color: white;">Hediye Fikirleri</a><br>
+          <a href="https://www.trendyol.com/s/trendyol-indirim-gunleri"  style="color: white;">Trendyol Fırsatları</a><br>
+          <h3 style="font-size: 16px;margin-left: 16px;color: white;"  >Sosyal Medya</h3>
+          <div class="sosyalbutonlar">
+
+            <a href="http://facebook.com/cahitsoyman.blogspot.com" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="http://twitter.com/cahitsoyman.blogspot.com" target="_blank" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="http://google-plus.com//cahitsoyman.blogspot.com" target="_blank" class="google-plus" ><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="http://instagram.com//cahitsoyman.blogspot.com" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            
+           
+      </div>
+        </div>
+        <div class="foot4" >
+          <a href="https://www.trendyol.com/yardim/sorular"  ><h2 style="margin-left: 12px; color: white;font-size:larger;" >Yardım</h2></a><br>
+          <a href="https://www.trendyol.com/yardim/sorular/"  style="color: white;">Sıkça Sorulan Sorular</a><br>
+          <a href="https://www.trendyol.com/yardim/sorular?liveChat=True"  style="color: white;">Canlı Yardım</a><br>
+          <a href="https://www.trendyol.com/yardim/sorular/1"  style="color: white;">Nasıl İade Edebilirim</a><br>
+          <a href="https://www.trendyol.com/yardim/sorular/2002?grup=1"  style="color: white;">İşlem Rehberi</a><br>
+          <a href="https://www.trendyol.com/en/select-country?cb=/en" style="font-size: 16px;margin-left: 2px;"><button type="button" id="ulke" style="color: white; background-color: black; border-radius: 3px;width: 100px;height: 30px; ">Ülke Değiştir</button></a>
+        </div>
+      </div>
+      <div class="footer2" >
+        <div class="footer3" style="margin-left: 40px;">
+          <p>©2023 DSM Grup Danışmanlık İletişim ve Satış Tic.A.Ş.-Her Hakkı Saklıdır.</p>
+        </div>
+        <div class="footer4" style="margin-left: 300px;color: white;">
+          <a href="#" style="color: white;">Çerez Tercihleri</a>
+        </div>
+        <div class="footer5">
+          <a href="https://www.trendyol.com/kisisel_verilerin_korunmasi.html" style="color: white;">KVK ve Gizlilik Politikası</a>
+        </div>
+        <div class="footer6">
+          <a href="http://www.dsmgrup.com/"style="color: white;">DSM Grup</a>
+         </div>
+         <div class="footer7">
+          <a href="https://www.trendyol.com/kullanim_kosullari.html"style="color: white;">Kullanım Koşulları</a>
+         </div>
+    </footer>
+  </body>
+  
+</html>
